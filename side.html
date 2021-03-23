@@ -1,0 +1,63 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Untitled Document</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<script type="text/javascript" src="jquery-1.2.2.pack.js"></script>
+<script type="text/javascript" src="htmltooltip.js"></script>
+<style type="text/css">
+<!--
+body {
+	background-color: #CCFF99;
+}
+
+div.htmltooltip{
+position: absolute; /*leave this and next 3 values alone*/
+z-index: 1000;
+left: -1000px;
+top: -1000px;
+background: #272727;
+border: 10px solid black;
+color: white;
+padding: 3px;
+width: 250px; /*width of tooltip*/
+}
+-->
+</style></head>
+
+<body>
+<p><a href="CVAndreaComun.htm" target="mainFrame">CURRICULUM VITAE</a></p>
+<p><a href="pasatiempo.htm" target="mainFrame">PASATIEMPOS</a></p>
+<p><a href="Otras%20ligas.htm" target="mainFrame">OTRAS LIGAS</a></p>
+<p><a href="MUSICA.htm" target="mainFrame">MUSICA</a></p>
+<p><a href="VIDEOS.htm" target="mainFrame">VIDEOS</a></p>
+<p><a href="FLASH/FLASH.htm" target="mainFrame">FLASH</a></p>
+<p><a href="Contacto.htm" target="mainFrame">CONTACTO</a></p>
+<p><a href="javascript:popanalog()">Mostrar el dia </a></p>
+<p><a href="#" rel="htmltooltip">mostrar informaci&oacute;n </a></p>
+<p><img src="facebook%20logo.gif" width="98" height="84"> <img src="instagram%20logo.gif" width="83" height="90"></p>
+<p><img src="logo%20whats.gif" width="97" height="77"> <img src="twitter%20logo.gif" width="104" height="85"></p>
+<div class="htmltooltip">texto de prueba en mi bonita pagina</div>
+</body>
+</html>
+<script>
+
+function uphilltext(text){
+var temptext=text.toUpperCase()
+var size=1
+//go through the text, letter by letter
+for (i=0;i<temptext.length;i++){
+document.write(temptext.charAt(i).fontsize(size).bold())
+if (size<7)
+size++
+else
+size=1
+}
+}
+
+function popanalog(){
+var d = new Date();
+alert("hoy es el dia: " + d.getDate());
+}
+</script>
